@@ -1,33 +1,31 @@
-/* raleway-regular - latin */
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/raleway-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/ralewayregular.woff2') format('woff2'), 
+      url('../fonts/ralewayregular.woff') format('woff'); 
 }
-/* raleway-500 - latin */
+
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/raleway-v14-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/raleway-v14-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/ralewaymedium.woff2') format('woff2'), 
+      url('../fonts/ralewaymedium.woff') format('woff'); 
 }
-/* raleway-800 - latin */
+
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
-  src: url('../fonts/raleway-v14-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/raleway-v14-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/ralewaybold.woff2') format('woff2'), 
+      url('../fonts/ralewaybold.woff') format('woff'); 
 }
 
-/* roboto-slab-regular - cyrillic_latin */
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-slab-v11-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-slab-v11-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/roboto-slab-v11-latin_cyrillic-regular.woff2') format('woff2'), 
+      url('../fonts/roboto-slab-v11-latin_cyrillic-regular.woff') format('woff'); 
 }
