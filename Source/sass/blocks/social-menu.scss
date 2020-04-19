@@ -1,0 +1,34 @@
+.social-menu {
+  @include no-list;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-menu__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $main-text;
+
+  
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    background-image: url('../img/vk.svg');
+  }
+
+  &--ok {
+    background-image: url('../img/ok.svg');
+  }
+
+  &--yt {
+    background-image: url('../img/yt.svg');
+  }
+
+  &--inst {
+    background-image: url('../img/inst.svg');
+  }
+}
