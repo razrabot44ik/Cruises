@@ -1,27 +1,27 @@
 .page-header {
+  position: relative;
+
   width: 100%;
 
   background-color: $main;
-
-  @include border;
-
-  position: relative;
 
   &__open-btn {
     position: absolute;
     top: 24px;
     left: 15px;
-    display: none;
+
     width: 22px;
-    height: 14px;
+    height: 22px;
 
     background-image: url("../img/menu-btn.svg");
+    background-repeat: no-repeat;
   }
 
   &__close-btn {
     position: absolute;
     top: 24px;
     left: 15px;
+
     display: block;
     width: 22px;
     height: 22px;
@@ -32,6 +32,10 @@
 
 .page-header__nav {
   padding: 0 85px;
+  padding-top: 63px;
+  padding-bottom: 37px;
+
+  display: none;
 }
 
 .page-header__title {
@@ -49,39 +53,43 @@
   justify-content: space-between;
 
   @include no-list;
+
+  margin-top: 54px;
 }
 
 .page-header__user-item {
   text-align: center;
-
+  margin-bottom: 34px;
   &:first-of-type {
     width: 100%;
   }
 }
 
 .page-header__user-link {
+  position: relative;
+
   display: block;
   box-sizing: border-box;
+  padding: 0 15px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   font-family: $main-font;
+  color: $main-text;
   font-style: normal;
   letter-spacing: 0.045em;
-  color: $main-text;
-  padding: 0 15px;
-  position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    width: 9px;
-    height: 6px;
-
     top: 8px;
     right: 1px;
 
-    background-image: url('../img/down.svg');
+    width: 9px;
+    height: 6px;
+
+    background-image: url("../img/down.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
@@ -90,12 +98,13 @@
   &--user::before {
     content: "";
     position: absolute;
+    top: 3px;
+    left: 0;
+
     width: 10px;
     height: 12px;
 
-    top: 3px;
-    left: 0;
-    background-image: url('../img/user.svg');
+    background-image: url("../img/user.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
@@ -104,17 +113,21 @@
   &--val::before {
     content: "";
     position: absolute;
-    width: 11px;
-    height: 12px;
-
     top: 3px;
     left: 0;
 
-    background-image: url('../img/rubl.svg');
+    width: 11px;
+    height: 12px;
+
+    background-image: url("../img/rubl.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
   }
+}
+
+.page-header__about-item {
+margin-bottom: 25px;
 }
 
 .page-header__link {
@@ -125,5 +138,9 @@
 
 .page-header__phone {
   text-align: center;
+  margin-top: 43px;
 }
 
+.page-header__social-list {
+  margin-top: 37px;
+}

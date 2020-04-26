@@ -1,0 +1,172 @@
+.catalog__title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: $title-font;
+  text-align: center;
+  color: #0d3351;
+  font-style: normal;
+  letter-spacing: 0.055em;
+}
+
+.catalog__sorting {
+  display: flex;
+  flex-wrap: wrap;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.catalog__sorting-text {
+  margin-right: 6px;
+  margin-left: auto;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $main-font;
+  font-style: normal;
+  letter-spacing: 0.053em;
+}
+
+.catalog__sorting__values {
+  position: relative;
+
+  margin-right: auto;
+  padding-right: 20px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $main-font;
+  font-style: italic;
+  letter-spacing: 0.053em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 5px;
+
+    display: block;
+    width: 9px;
+    height: 9px;
+
+    background-image: url("../img/down.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.catalog__list {
+  @include no-list;
+}
+
+.catalog__item {
+  position: relative;
+
+  padding-top: 7px;
+}
+
+.catalog__item-label {
+
+  $label-color-blue: #34c7fd;
+  $label-color-red: #F10341;;
+
+  position: absolute;
+  top: 0;
+  right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 89px;
+  height: 83px;
+  padding: 10px;
+
+  background-color: $label-color-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 8px;
+
+    display: block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+
+    border: 15px solid $label-color-blue;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: scaleX(1.5) scaleY(0.7);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    bottom: -25px;
+
+    display: block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+
+    border: 15px solid $label-color-blue;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: scaleX(1.5) scaleY(0.7);
+  }
+
+  &--discount {
+    background-color: $label-color-red;
+    &::before {
+      border: 15px solid $label-color-red;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+
+    &::after {
+      border: 15px solid $label-color-red;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    }
+  }
+
+  &--stock {
+    background-color: $label-color-red;
+    &::before {
+      border: 15px solid $label-color-red;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+
+    &::after {
+      border: 15px solid $label-color-red;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    }
+  }
+}
+
+.catalog__item-label-text {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $main-font;
+  text-align: center;
+  text-align: center;
+  color: $main;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.053em;
+}
+
+.catalog-item__wrapper {
+  background-color: $main;
+  padding: 10px;
+  box-sizing: border-box;
+}
