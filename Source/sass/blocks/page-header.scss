@@ -144,3 +144,55 @@ margin-bottom: 25px;
 .page-header__social-list {
   margin-top: 37px;
 }
+
+@media (min-width: $tablet) {
+  .page-header {
+    background-color: transparent;
+  }
+  .page-header__nav {
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;
+  }
+
+  .page-header__close-btn {
+    display: none;
+  }
+
+  .page-header__title {
+    display: none;
+  }
+  .page-header__user-menu {
+    margin: 0;
+  }
+
+  .page-header__user-item {
+    margin: 0;
+    margin-right: 15px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  } 
+
+  .page-header__user-item:first-of-type {
+    width: auto;
+  }
+
+  .page-header__phone {
+    margin: 0;
+    margin-left: 40px;
+  }
+
+  .page-header__about-menu  {
+    display: none;
+  }
+
+  .page-header__social-list {
+    display: none;
+  }
+}
