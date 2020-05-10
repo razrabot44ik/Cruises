@@ -75,13 +75,57 @@
 }
 
 @media (min-width: $tablet) {
-  .page-footer__copy {
-    color: red;
+  .page-footer {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  .page-footer__about-menu {
+    display: block;
+  }
+
+  .page-footer__text {
+    margin-bottom: 10px;
+  }
+
+  .page-footer__phone {
+    text-align: left;
+  }
+
+  .page-footer__number {
+    margin-bottom: 10px;
+  }
+
+  .page-footer__about-item {
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .page-footer__wrapper--phone {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
   }
 }
 
 @media (min-width: $desktop) {
-  .page-footer__copy {
-    color: green;
+  .page-footer {
+    width: 1140px;
+    justify-content: flex-start;
+  }
+
+  .page-footer__wrapper {
+    margin-left: 150px;
+  }
+
+  .page-footer__wrapper--phone {
+    margin-left: auto;
   }
 }
