@@ -62,7 +62,7 @@ background-size: 45px 219px, 69px;
 
 @media (min-width: $tablet) {
   .heading__bg {
-    background-image: url('../../img/title-tab.jpg');
+    background-image: url('../img/title-tab.jpg');
     background-size: cover;
   }
   .heading__wrapper {
@@ -85,5 +85,33 @@ background-size: 45px 219px, 69px;
 
   .heading__btn {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .heading__bg {
+    background-image: url('../img/title-desk.jpg');
+    background-size: cover;
+    margin-bottom: 70px;
+  }
+
+  .heading__title {
+    width: 1140px;
+    span {
+    &:nth-of-type(1) {
+      margin-bottom: 20px;
+
+      font-size: 36px;
+    }
+
+    &:nth-of-type(2) {
+      font-size: 100px;
+    }
+  }
+  }
+
+  .heading__btn {
+    margin-top: 50px;
   }
 }

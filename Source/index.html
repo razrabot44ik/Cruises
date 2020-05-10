@@ -28,14 +28,20 @@
           <a class="page-header__user-link page-header__user-link--lang" href="#" aria-label="Язык сайта">Ru</a>
         </li>
       </ul>
-      <ul class="page-header__about-menu about-menu">
-        <li class="page-header__about-item about-menu__item"><a href="" class="page-header__link about-menu__link">Вход
-            для партнеров</a></li>
-        <li class="page-header__about-item about-menu__item"><a href="" class="page-header__link about-menu__link">О
-            компании</a></li>
-        <li class="page-header__about-item about-menu__item"><a href=""
-            class="page-header__link about-menu__link">Контакты</a></li>
-      </ul>
+
+      <a class="page-header__open-btn page-header__open-btn--about" href="#" aria-label="Открыть меню"></a>
+      <div class="page-header__about-menu-wrapper">
+        <a class="page-header__close-btn page-header__close-btn--about" href="#" aria-label="Закрыть меню"></a>
+        <ul class="page-header__about-menu about-menu">
+          <li class="page-header__about-item about-menu__item"><a href=""
+              class="page-header__link about-menu__link">Вход
+              для партнеров</a></li>
+          <li class="page-header__about-item about-menu__item"><a href="" class="page-header__link about-menu__link">О
+              компании</a></li>
+          <li class="page-header__about-item about-menu__item"><a href=""
+              class="page-header__link about-menu__link">Контакты</a></li>
+        </ul>
+      </div>
       <a class="page-header__phone phone" href="tel:+78005006105">
         <span class="page-header__number phone__number">8 800 500-61-05</span>
         <span class="page-header__text phone__text">Круглосуточная поддержка</span>
@@ -154,7 +160,7 @@
               <a class="catalog__item-link" href="#">
                 <h3 class="catalog__item-title">Морская прогулка
                   в Геленджик</h3>
-                  <svg class="catalog__item-arrow" width="9" height="6" viewBox="0 0 9 6"
+                <svg class="catalog__item-arrow" width="9" height="6" viewBox="0 0 9 6"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.33013 6L0 0L8.66025 7.57104e-07L4.33013 6Z" />
                 </svg>
@@ -232,10 +238,9 @@
         </ul>
         <a class="btn catalog__btn" href="#">
           <span class="catalog__btn-text">Больше круизов</span>
-          <svg class="catalog__btn-arrow" width="9" height="6" viewBox="0 0 9 6"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4.33013 6L0 0L8.66025 7.57104e-07L4.33013 6Z" />
-                </svg>
+          <svg class="catalog__btn-arrow" width="9" height="6" viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.33013 6L0 0L8.66025 7.57104e-07L4.33013 6Z" />
+          </svg>
         </a>
       </div>
     </section>
@@ -251,30 +256,35 @@
           class="page-footer__link about-menu__link">Контакты</a></li>
     </ul>
 
-    <a class="page-footer__phone phone" href="tel:+78005006105">
-      <span class="page-footer__number phone__number">8 800 500-61-05</span>
-      <span class="page-footer__text phone__text">Круглосуточная поддержка</span>
-    </a>
+    <div class="page-footer__wrapper">
+      <p class="page-footer__text">Будь на связи:</p>
+      <ul class="page-footer__social-list social-menu">
+        <li class="page-footer__social-item social-menu__item">
+          <a href="" class="page-footer__social-link social-menu__link social-menu__link--vk"
+            aria-label="Вконтакте"></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a href="" class="page-footer__social-link social-menu__link social-menu__link--ok"
+            aria-label="Одноклассники"></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a href="" class="page-footer__social-link social-menu__link social-menu__link--yt" aria-label="Youtube"></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a href="" class="page-footer__social-link social-menu__link social-menu__link--inst"
+            aria-label="Instagram"></a>
+        </li>
+      </ul>
+    </div>
 
-    <p class="page-footer__text">Будь на связи:</p>
-    <ul class="page-footer__social-list social-menu">
-      <li class="page-footer__social-item social-menu__item">
-        <a href="" class="page-footer__social-link social-menu__link social-menu__link--vk"
-          aria-label="Вконтакте"></a>
-      </li>
-      <li class="page-footer__social-item">
-        <a href="" class="page-footer__social-link social-menu__link social-menu__link--ok"
-          aria-label="Одноклассники"></a>
-      </li>
-      <li class="page-footer__social-item">
-        <a href="" class="page-footer__social-link social-menu__link social-menu__link--yt" aria-label="Youtube"></a>
-      </li>
-      <li class="page-footer__social-item">
-        <a href="" class="page-footer__social-link social-menu__link social-menu__link--inst"
-          aria-label="Instagram"></a>
-      </li>
-    </ul>
-    <p class="page-footer__copy">© 2020 OOO «Городские Круизы»</p>
+    <div class="page-footer__wrapper page-footer__wrapper--phone">
+      <a class="page-footer__phone phone" href="tel:+78005006105">
+        <span class="page-footer__number phone__number">8 800 500-61-05</span>
+        <span class="page-footer__text phone__text">Круглосуточная поддержка</span>
+      </a>
+
+      <p class="page-footer__copy">© 2020 OOO «Городские Круизы»</p>
+    </div>
   </footer>
 </body>
 
