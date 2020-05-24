@@ -13,8 +13,6 @@
     width: 22px;
     height: 22px;
 
-    background-image: url("../img/menu-btn.svg");
-    background-repeat: no-repeat;
   }
 
   &__close-btn {
@@ -26,7 +24,6 @@
     width: 22px;
     height: 22px;
 
-    background-image: url("../img/menu-close-btn.svg");
   }
 }
 
@@ -80,49 +77,22 @@
   font-style: normal;
   letter-spacing: 0.045em;
 
-  &::after {
-    content: "";
+  .page-header__user-icon--arrow {
     position: absolute;
     top: 8px;
     right: 1px;
-
-    width: 9px;
-    height: 6px;
-
-    background-image: url("../img/down.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100%;
   }
 
-  &--user::before {
-    content: "";
+  .page-header__user-icon--user {
     position: absolute;
     top: 3px;
     left: 0;
-
-    width: 10px;
-    height: 12px;
-
-    background-image: url("../img/user.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100%;
   }
 
-  &--val::before {
-    content: "";
+  .page-header__user-icon--rubl {
     position: absolute;
     top: 3px;
     left: 0;
-
-    width: 11px;
-    height: 12px;
-
-    background-image: url("../img/rubl.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100%;
   }
 }
 
