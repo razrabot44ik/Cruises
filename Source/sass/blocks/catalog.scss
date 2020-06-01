@@ -57,9 +57,9 @@
 
 .catalog__item {
   position: relative;
-
-  padding-top: 7px;
   margin-bottom: 20px;
+
+  background-color: #fff;
 }
 
 .catalog__item--desktop {
@@ -72,7 +72,7 @@
   $label-color-red: #F10341;;
 
   position: absolute;
-  top: 5px;
+  top: -5px;
   right: 10px;
 
   display: flex;
@@ -106,7 +106,7 @@
   &::after {
     content: "";
     position: absolute;
-    right: 8px;
+    right: 7px;
     bottom: -25px;
 
     display: block;
@@ -168,7 +168,6 @@
 
 .catalog__item-img {
   position: relative;
-  top: 5px;
   z-index: 1;
   width: 100%;
 }
@@ -176,21 +175,21 @@
 .catalog-item__wrapper {
   background-color: $main;
   padding: 10px;
-  box-sizing: border-box;
 }
 
 .catalog__item-link {
   display: block;
   box-sizing: border-box;
-  padding-right: 55px;
+  padding-right: 40px;
   position: relative;
   min-height: 55px;
 
   .catalog__item-arrow {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 10px;
-    transform: rotate(-90deg);
+
+    transform: translateY(-50%) rotate(-90deg);
 
     fill: $title-text;
   }
@@ -199,11 +198,11 @@
 
 .catalog__item-description {
   margin-top: 10px;
-  width: 85%;
   min-height: 75px;
 }
 
 .catalog__item-title {
+  margin-top: 0;
   margin-bottom: 10px;
   font-family: $title-font;
   font-style: normal;
@@ -313,6 +312,14 @@ color: rgba(13, 51, 81, 0.54);
   .catalog__item {
     width: 345px;
   }
+
+  .catalog__item-description {
+    width: 80%;
+  }
+
+  .catalog__item-link .catalog__item-arrow {
+    top: 14px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -323,6 +330,15 @@ color: rgba(13, 51, 81, 0.54);
   .catalog__list {
     width: 1140px;
     margin-top: 25px;
+
+    display: grid;
+    grid-gap: 18px 30px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas: 
+      "hit stock"
+      "hit discount";
   }
 
   .catalog__item--desktop {
@@ -330,23 +346,23 @@ color: rgba(13, 51, 81, 0.54);
   }
 
   .catalog__item {
-    width: 555px;
+    width: 100%;
+    margin: 0;
   }
 
   .catalog__item:nth-of-type(1) {
-    width: 558px;
+    grid-area: hit;
   }
 
-  // .catalog__item:nth-of-type(2) {
-  //   width: 555px;
-  // }
+  .catalog__item-link {
+    min-height: 0;
+  }
 
-  // .catalog__item:nth-of-type(3) {
-  //   width: 555px;
-  // }
+  .catalog__item-description  {
+    min-height: 0;
+  }
 
-  // .catalog__item:nth-of-type(3) {
-  //   width: 555px;
-  // }
-
+  .catalog__btn {
+    margin-top: 25px;
+  }
 }
